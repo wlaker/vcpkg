@@ -20,10 +20,6 @@ vcpkg_from_github(
     REF v2017.11.27.00
     SHA512 738bb00047a7cbd807f2dccd64031763df80bbebca73f1ae9500b750dcad156dde84e47f4eda7af1bcd7abfae10c973da47515f2e111929979d1637869cf06ee
     HEAD_REF master
-)
-
-vcpkg_apply_patches(
-    SOURCE_PATH ${SOURCE_PATH}
     PATCHES
         ${CMAKE_CURRENT_LIST_DIR}/cmake-link-boost-fix.patch
         ${CMAKE_CURRENT_LIST_DIR}/msvc-15.6-workaround.patch
